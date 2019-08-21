@@ -190,11 +190,11 @@
                             <a class="btn item-more" href="https://jddj.com" target="_blank" title="工作经历">工作</a>
                             <h3 class="item-name" style="font-weight:700">京东到家</h3>
                         </header>
-                        <div class="item-bd">
-                            <p class="section-content">
-                                <strong>订单中心</strong><strong>订单流程组</strong>
-                            </p>
-                        </div>
+                        <!--<div class="item-bd">-->
+                            <!--<p class="section-content">-->
+                                <!--<strong>订单中心</strong><strong>订单流程组</strong>-->
+                            <!--</p>-->
+                        <!--</div>-->
                     </div>
                     <div class="item">
                         <header class="item-hd">
@@ -204,15 +204,13 @@
                             <p class="section-content">
                                 <strong>研发负责人</strong>
                                 负责订单中心系统架构设计与开发。订单中心系统包括<em>Buffer</em>，<em>Core</em>，<em>Query</em>。<br/>
-                                使用<em>线程池</em>并行调用其他系统接口提高接口响应时间，<em>Tp999</em>从<em>2000ms</em>下降到<em>500ms</em>。<br/>
-                                使用<em>Jsf Rpc框架</em>提供远程服务。<br/>
-                                使用<em>Jmq消息队列</em>完成系统的解藕和订单状态变更消息通知。<br/>
-                                使用<em>Zookeeper</em>做动态配置服务和动态日志切换。<br/>
-                                使用<em>Redis集群</em>做分布式锁保证订单小号的连续性。<br/>
-                                使用<em>Tbschedule分布式任务框架</em>处理失败订单数据，保证订单数据的最终一致性。<br/>
-                                基于<em>ElasticSearch</em>开发的订单搜索服务，支撑每天上亿级的检索。<br/>
-                                优化订单小号的生成性能，具体提高了<em>2-3倍</em>。<br/>
+                                使用<em>线程池</em>并行调用依赖接口，极大提高了接口响应时间，<em>Tp999</em>从<em>2000ms</em>下降到<em>100ms</em>。<br/>
                                 使用<em>模板方法模式</em>重构订单补全逻辑，有利于程序的扩展。<br/>
+                                使用<em>Jsf Rpc框架</em>提供远程调用服务，方便其他系统调用<br/>
+                                使用<em>Jmq消息队列</em>完成系统的解藕和订单状态变更消息通知。<br/>
+                                使用Incr操作取代<em>Redis分布式锁</em>生成订单小号，性能提高了<em>5-8倍</em><br/>
+                                使用<em>Tbschedule分布式任务框架</em>实时处理失败订单，保证订单数据的最终一致性。<br/>
+                                基于<em>ElasticSearch</em>开发订单检索服务，支撑每天上亿级的检索。<br/>
                             </p>
                         </div>
                     </div>
