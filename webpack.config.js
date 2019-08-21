@@ -1,7 +1,3 @@
-/* webpack.config.js
- * @ Cong Min
- */
-// const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -39,9 +35,9 @@ module.exports = {
                 test: /\.(less|css)$/,
                 use: [
                     { loader: 'style-loader' },
-                    { loader: 'css-loader?minimize' },
+                    { loader: 'css-loader' },
                     { loader: 'postcss-loader' },
-                    { loader: 'less-loader' }
+                    { loader: 'less-loader?compress' }
                 ]
             },
             {
