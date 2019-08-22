@@ -114,7 +114,7 @@
                             <ul class="section-content">
                                 <li>
                                     <i class="iconfont icon-dot"></i>
-                                    熟悉 <em>MySQL</em>等关系型数据库，理解索引原理，并利用其进行慢Sql调优
+                                    熟悉 <em>MySQL</em>关系型数据库，理解索引原理，并利用其进行慢Sql调优
                                 </li>
                                 <li>
                                     <i class="iconfont icon-dot"></i>
@@ -165,7 +165,7 @@
                                 </li>
                                 <li>
                                     <i class="iconfont icon-dot"></i>
-                                    熟悉 <em>IDEA</em>、<em>Eclipse</em>、<em>VSCode</em>、<em>Navicat</em> 等开发工具的使用
+                                    熟悉 <em>IDEA</em>、<em>Eclipse</em>、<em>Navicat</em> 等开发工具的使用
                                 </li>
                                 <li>
                                     <i class="iconfont icon-dot"></i>
@@ -193,7 +193,7 @@
                         <header class="item-hd">
                             <span class="item-time">2017.04 ~ 至今</span>
                             <a class="btn item-more" href="https://jddj.com" target="_blank" title="工作经历">工作</a>
-                            <h3 class="item-name" style="font-weight:700">京东到家</h3>
+                            <h3 class="item-name" style="font-weight:700">京东·京东到家</h3>
                         </header>
                         <!--<div class="item-bd">-->
                             <!--<p class="section-content">-->
@@ -208,14 +208,14 @@
                         <div class="item-bd">
                             <p class="section-content">
                                 <strong>研发负责人</strong>
-                                负责订单中心系统架构设计与开发。订单中心系统包括<em>Buffer</em>，<em>Core</em>，<em>Query</em>。<br/>
-                                使用<em>线程池</em>并行调用依赖接口，极大提高了接口响应时间，<em>Tp999</em>从<em>2000ms</em>下降到<em>100ms</em>。<br/>
-                                使用<em>模板方法模式</em>重构订单补全逻辑，有利于程序的扩展。<br/>
+                                负责订单中心系统架构设计与开发。<br/>
+                                使用<em>线程池</em>并行调用依赖接口，极大提高了接口响应时间，<em>Tp999</em>从<em>2000ms</em>下降到<em>100ms</em><br/>
+                                使用<em>模板方法模式</em>重构订单补全逻辑，有利于程序的扩展<br/>
                                 使用<em>Jsf Rpc框架</em>提供远程调用服务，方便其他系统调用<br/>
-                                使用<em>Jmq消息队列</em>完成系统的解藕和订单状态变更消息通知。<br/>
+                                使用<em>Jmq消息队列</em>完成系统的解藕和订单状态变更消息通知<br/>
                                 使用Incr操作取代<em>Redis分布式锁</em>生成订单小号，性能提高了<em>5-8倍</em><br/>
-                                使用<em>Tbschedule分布式任务框架</em>实时处理失败订单，保证订单数据的最终一致性。<br/>
-                                基于<em>ElasticSearch</em>开发订单检索服务，支撑每天上亿级的检索。<br/>
+                                使用<em>Tbschedule分布式任务框架</em>实时处理失败订单，保证订单数据的最终一致性<br/>
+                                基于<em>ElasticSearch</em>开发订单检索服务，支撑每天上亿级的检索<br/>
                             </p>
                         </div>
                     </div>
@@ -226,11 +226,11 @@
                         <div class="item-bd">
                             <p class="section-content">
                                 <strong>项目负责人</strong>
-                                负责商家中心系统架构设计与开发。商家中心系统包括商家中心Service，商家中心Web，长链接服务。<br/>
-                                基于<em>Spring Mvc</em>开发商家后台管理和操作订单页面，包括接单，打印，捡货，处理异常订单等操作。<br/>
-                                基于<em>Netty框架</em>开发长链接服务，使用<em>Websocket</em>协议与前端通讯。
-                                并使用<em>Zookeeper</em>进行长链接服务器集群的管理，长链接服务主要用于自动打印和订单提醒。<br/>
-                                <em>优化</em>了商家中心<em>Jvm</em>性能，<em>Young Gc Max</em>由<em>4000ms</em>减低到<em>50ms</em>。<br/>
+                                负责商家中心系统架构设计与开发<br/>
+                                基于<em>Spring Mvc</em>开发商家后台管理和操作订单页面，包括接单，打印，捡货，处理异常订单等操作<br/>
+                                基于<em>Netty框架</em>开发长链接服务，使用<em>Websocket</em>协议与前端通讯
+                                并使用<em>Zookeeper</em>进行长链接服务器集群的管理，长链接服务主要用于自动打印和订单提醒<br/>
+                                优化商家中心<em>Jvm</em>性能，<em>Young Gc</em> Max由<em>4000ms</em>到<em>50ms</em><br/>
                             </p>
                         </div>
                     </div>
@@ -240,13 +240,10 @@
                         </header>
                         <div class="item-bd">
                             <p class="section-content">
-                                <strong>项目负责人</strong>
-                                合流墙系统分为合流墙service，合流墙web管理页面。​
-                                合流墙service负责提供合流墙的一些操作，包括接单、绑定袋子、捡货、合流、打包等服务。
-                                ​合流墙web管理页面提供查看合流墙所有格子的状态、合流捡货单、合流单的详细信息等操作。<br/>
-
-                                从0到1搭建合流墙系统，全权主导合流墙系统的<em>架构设计</em>。<br/>
-                                完成<em>复杂数据库表的设计</em>，实现<em>核心流程</em>和<em>关键功能</em>。
+                                <strong>项目负责人</strong>带领<em>3人小团队</em>，从0到1搭建合流墙系统，全权主导合流墙系统的<em>架构设计与开发</em><br/>
+                                完成合流墙<em>复杂数据库表的设计和开发</em><br/>
+                                完成合流墙<em>核心功能</em>的开发，包括<em>接单</em>、<em>绑定袋子</em>、<em>捡货</em>、<em>合流</em>、<em>打包</em>等核心功能<br/>
+                                ​完成合流墙<em>管理后台</em>的开发，提供查看合流墙所有格子的状态、合流捡货单、合流单的详细信息等操作<br/>
                             </p>
                         </div>
                     </div>
